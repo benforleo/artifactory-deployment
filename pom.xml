@@ -9,15 +9,49 @@
     <scala.version>2.13.10</scala.version>
   </properties>
 
+  <repositories>
+    <repository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>forleo-dataengineering-maven-virtual</name>
+      <url>https://forleoanalytics.jfrog.io/artifactory/forleo-dataengineering-maven-virtual</url>
+    </repository>
+    <repository>
+      <snapshots />
+      <id>snapshots</id>
+      <name>forleo-dataengineering-maven-virtual</name>
+      <url>https://forleoanalytics.jfrog.io/artifactory/forleo-dataengineering-maven-virtual</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>central</id>
+      <name>forleo-dataengineering-maven-virtual</name>
+      <url>https://forleoanalytics.jfrog.io/artifactory/forleo-dataengineering-maven-virtual</url>
+    </pluginRepository>
+    <pluginRepository>
+      <snapshots />
+      <id>snapshots</id>
+      <name>forleo-dataengineering-maven-virtual</name>
+      <url>https://forleoanalytics.jfrog.io/artifactory/forleo-dataengineering-maven-virtual</url>
+    </pluginRepository>
+  </pluginRepositories>
+
   <distributionManagement>
     <repository>
       <id>central</id>
-      <name>a0co2t79lgr13-artifactory-primary-0-releases</name>
+      <name>forleo-dataengineering-maven-local</name>
       <url>https://forleoanalytics.jfrog.io/artifactory/forleo-dataengineering-maven-local</url>
     </repository>
     <snapshotRepository>
       <id>snapshots</id>
-      <name>a0co2t79lgr13-artifactory-primary-0-snapshots</name>
+      <name>forleo-dataengineering-maven-local</name>
       <url>https://forleoanalytics.jfrog.io/artifactory/forleo-dataengineering-maven-local</url>
     </snapshotRepository>
   </distributionManagement>

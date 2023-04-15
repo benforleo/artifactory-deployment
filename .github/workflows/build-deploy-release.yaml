@@ -17,5 +17,9 @@ jobs:
           distribution: 'temurin'
           java-version: '8'
           server-id: 'snapshots'
-          #server-username: bforleo@outlook.com
+          server-username: ${{ secrets.ARTIFACTORY_USER }}
           server-password: ${{ secrets.ARTIFACTORY_TOKEN }}
+
+      - name: Maven deploy
+        run: mvn deploy
+
