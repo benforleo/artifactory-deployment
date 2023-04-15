@@ -17,8 +17,8 @@ jobs:
           distribution: 'temurin'
           java-version: '8'
           server-id: 'snapshots'
-          server-username: ${{ secrets.ARTIFACTORY_USER }}
-          server-password: ${{ secrets.ARTIFACTORY_TOKEN }}
+          server-username: ARTIFACTORY_USER_ENV_VARIABLE_REFERENCE # puts this in settings.xml ${env.ARTIFACTORY_USER_ENV_REFERENCE}
+          server-password: ARTIFACTORY_PASSWORD_ENV_VARIABLE_REFERENCE
 
       - name: print settings
         run: cat /home/runner/.m2/settings.xml
