@@ -1,0 +1,24 @@
+name: Artifactory Deployment
+on:
+  push:
+
+jobs:
+  artifactory-deployment:
+    name: Deploy Release to Artifactory
+    runs-on: ubuntu-22.04
+    environment: production
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '8'
+
+
+
+
+
+
