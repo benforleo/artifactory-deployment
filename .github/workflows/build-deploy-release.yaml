@@ -23,6 +23,9 @@ jobs:
       - name: print settings
         run: cat /home/runner/.m2/settings.xml
 
-#      - name: Maven deploy
-#        run: mvn deploy
+      - name: Maven deploy
+        run: mvn deploy
+        env:
+          ARTIFACTORY_USER_ENV_VARIABLE_REFERENCE: ${{ secrets.ARTIFACTORY_USER }}
+          ARTIFACTORY_PASSWORD_ENV_VARIABLE_REFERENCE: ${{ secrets.ARTIFACTORY_TOKEN }}
 
