@@ -20,6 +20,9 @@ jobs:
           server-username: ${{ secrets.ARTIFACTORY_USER }}
           server-password: ${{ secrets.ARTIFACTORY_TOKEN }}
 
-      - name: Maven deploy
-        run: mvn deploy
+      - name: print settings
+        run: cat /home/runner/.m2/settings.xml
+
+#      - name: Maven deploy
+#        run: mvn deploy
 
