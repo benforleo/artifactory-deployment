@@ -16,9 +16,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '8'
-
-
-
-
-
-
+          server-id: 'snapshots'
+          #server-username: bforleo@outlook.com
+          server-password: ${{ secrets.ARTIFACTORY_TOKEN }}
