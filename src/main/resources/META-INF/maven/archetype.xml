@@ -1,0 +1,12 @@
+<archetype>
+  <id>scala-http-mvn</id>
+<!--  <sources>-->
+<!--    <source>src/main/java/App.java</source>-->
+<!--  </sources>-->
+<!--  <testSources>-->
+<!--    <source>src/test/java/AppTest.java</source>-->
+<!--  </testSources>-->
+  <sources>
+    <source>src/main/scala/Main.scala</source>
+  </sources>
+</archetype>
