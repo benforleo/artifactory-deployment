@@ -13,15 +13,9 @@
   <repositories>
     <repository>
       <snapshots>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
       </snapshots>
       <id>central</id>
-      <name>forleo-dataengineering-maven-virtual</name>
-      <url>https://forleoanalytics.jfrog.io/artifactory/forleo-dataengineering-maven-virtual</url>
-    </repository>
-    <repository>
-      <snapshots />
-      <id>snapshots</id>
       <name>forleo-dataengineering-maven-virtual</name>
       <url>https://forleoanalytics.jfrog.io/artifactory/forleo-dataengineering-maven-virtual</url>
     </repository>
@@ -30,15 +24,9 @@
   <pluginRepositories>
     <pluginRepository>
       <snapshots>
-        <enabled>false</enabled>
+        <enabled>true</enabled>
       </snapshots>
       <id>central</id>
-      <name>forleo-dataengineering-maven-virtual</name>
-      <url>https://forleoanalytics.jfrog.io/artifactory/forleo-dataengineering-maven-virtual</url>
-    </pluginRepository>
-    <pluginRepository>
-      <snapshots />
-      <id>snapshots</id>
       <name>forleo-dataengineering-maven-virtual</name>
       <url>https://forleoanalytics.jfrog.io/artifactory/forleo-dataengineering-maven-virtual</url>
     </pluginRepository>
@@ -46,15 +34,13 @@
 
   <distributionManagement>
     <repository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
       <id>central</id>
       <name>forleo-dataengineering-maven-local</name>
       <url>https://forleoanalytics.jfrog.io/artifactory/forleo-dataengineering-maven-local</url>
     </repository>
-    <snapshotRepository>
-      <id>snapshots</id>
-      <name>forleo-dataengineering-maven-local</name>
-      <url>https://forleoanalytics.jfrog.io/artifactory/forleo-dataengineering-maven-local</url>
-    </snapshotRepository>
   </distributionManagement>
 
   <dependencies>
