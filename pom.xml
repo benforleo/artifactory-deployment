@@ -3,9 +3,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.benjaminforleo</groupId>
   <artifactId>scala-http-mvn</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>${revision}</version>
 
   <properties>
+    <revision>1.0-SNAPSHOT</revision>
     <scala.version>2.13.10</scala.version>
   </properties>
 
