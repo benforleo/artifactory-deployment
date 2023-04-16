@@ -1,7 +1,8 @@
 name: Artifactory Deployment
 on:
   release:
-    - published
+    types:
+      - published
 
 jobs:
   artifactory-deployment:
